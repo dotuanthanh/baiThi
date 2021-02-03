@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai So 2</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    function tryRemoveFromArray(numbers, x) {
+        for (let i = 0; i < numbers.length; i++) {
+            if (numbers[i] === x) {
+                let j = numbers.indexOf(x)
+                numbers.splice(j, 1)
+            }
+        }
+        return console.log(numbers)
+    }
+
+    num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    x = parseInt(prompt('Nhập số muốn xóa trong mảng'))
+    tryRemoveFromArray(num, x)
+</script>

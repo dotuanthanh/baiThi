@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai So 1</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    function findMax(score) {
+        let max = score[0]
+        for (let i = 1; i < score.length; i++) {
+            if (score[i] > max) {
+                max = score[i]
+            }
+        }
+        return max
+    }
+    let Score = [1, 5, 3, 4, 12, 9]
+    maxScore = findMax(Score)
+    alert(maxScore)
+</script>
